@@ -594,7 +594,7 @@ function Landing() {
                 </div><div className="testi_grid gap-8">
                   <img src={client3} alt=" " className="img-fluid h-40 w-40 ml-4" />
                   <h5>Ana De armas</h5>
-                  <label>I used this website to overcome my addiction of consuming alcohol. </label>
+                  <label>I used this website to overcome my relationship issues. </label>
                 </div>
                 </div>
               </div>
@@ -611,7 +611,7 @@ function Landing() {
                   <div className="flex">
                     <img src={sbIcon} width={35} alt="" />
                     <a href="/" className="mx-2 mt-2">
-                      Refrain Addiction
+                      Soulful_Minds
                     </a>
                   </div>
                 </h2>
@@ -743,7 +743,7 @@ function Landing() {
           <div className="container">
             <div className="row">
               <p className="col-md-10 text-left">
-                © 2023 Refrain Addiction. All rights reserved{' '}
+                © 2023 Soulful Minds. All rights reserved{' '}
               </p>
               {/* move top icon */}
               <a

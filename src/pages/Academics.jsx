@@ -3,46 +3,46 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 
-const Alcohol = () => {
+const Academics = () => {
     const questions = [
         {
-          question: 'How often do you feel the need or urge to drink alcohol?',
+          question: 'How often do you worry about your academic performance?',
         },
         {
-            question: 'Have you ever tried to cut down or control your alcohol consumption?',
+            question: 'How much pressure do you feel to excel academically?',
         },
         {
-            question: 'Has your alcohol consumption ever caused problems in your personal relationships or friendships?',
+            question: 'Do you often experience stress or anxiety related to academic workload?',
         },
         {
-            question: 'Have you ever faced any academic difficulties (e.g., failing in exams, missing an important deadline) due to drinking alcohol?',
+            question: 'How much your sleep cycle is affected due to academics?',
         },
         {
-            question: 'How often have you experienced withdrawal symptoms (e.g., shakiness, sweating, nausea) when you have not consumed alcohol for some time?',
+            question: 'How much does the fear of failure affect your mental well-being? ',
         },
         {
-            question: 'Do you often drink more alcohol than you initially intended?',
+            question: 'how much satisfied you are with your current academic performance?',
         },
         {
-            question: 'Have you ever tried to hide your alcohol consumption from others?',
+            question: 'How often do you compare your academic achievements to others?',
         },
         {
-            question: 'Has your alcohol consumption affected your mental or physical health negatively?',
+            question: 'How frequently do you feel isolated or lonely due to academic pressures?',
         },
         {
-            question: 'How many drinks do you have on a typical drinking day?',
+            question: 'How often does academic stress affect your appetite and eating habits?',
         },
         {
-            question: 'Do you often drink alone?',
+            question: 'How much time you give to your hobbies?',
         },
         {
-            question: 'Do you spend a significant amount of time obtaining, using, or recovering from alcohol?',
+            question: 'Do you spend a significant amount of time preparing for your academics?',
         },
         {
-            question: 'Do you feel guilty or ashamed about your drinking behavior?',
+            question: 'How good is your work life balance?',
         },
         {
-            question: 'Have you experienced financial difficulties as a result of spending money on alcohol?',
+            question: 'How often do you experience feelings of burnout related to academics?',
         },
       ];
     
@@ -136,7 +136,7 @@ const Alcohol = () => {
             <div className='text-xl font-bold mb-6'>
                 Your Quiz has been completed. Click on Submit button to see your score.
             </div>
-            <Link to = "/alcoholSupp" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <Link to = "/academicsSupp" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Submit
             </Link>
             </>
@@ -146,4 +146,4 @@ const Alcohol = () => {
   );
 };
 
-export default Alcohol;
+export default Academics;

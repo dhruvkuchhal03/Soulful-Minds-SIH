@@ -1,52 +1,51 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import {useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-
-const Drugs = () => {
-    const navigate=useNavigate();
-
+const Relationship = () => {
     const questions = [
         {
-          question: 'How often do you use drugs?',
+          question: 'How often do you and your friends engage in activities that you enjoy together?',
         },
         {
-          question: 'How many drugs do you typically use in a single session?',
-        },
-        {
-            question: 'Have you ever tried to cut down or control your drug use but could not?',
+            question: 'How much do you feel comfortable sharing your opinions and disagreements with your friends?',
           },
           {
-            question: 'Do you find it difficult to go for a significant period without using drugs?',
+            question: 'How much supported do you feel by your friends during challenging times?',
           },
           {
-            question: 'Have you noticed that you need higher doses of drugs to achieve the same effect as before?',
+            question: 'How satisfied are you with the level of trust in your current romantic relationship?',
           },
           {
-            question: 'Do you often use drugs alone?',
+            question: 'To what extent do you and your partner communicate openly and honestly?',
           },
           {
-            question: 'Have you experienced financial difficulties as a result of spending money on drugs?',
+            question: 'How well do you feel your partner listens to your concerns and feelings?',
           },
           {
-            question: 'Has your drug consumption ever caused problems in your personal relationships or friendships?',
+            question: 'How comfortable are you discussing personal matters with your family members?',
           },
           {
-            question: 'Have you ever faced any academic difficulties (e.g., failing in exams, missing an important deadline) due to consumption of drugs?',
+            question: 'How often do you feel supported by your family when facing challenges?',
+          },
+           {
+            question: 'Do you feel understood by your family members when you express your thoughts and feelings?',
           },
           {
-            question: 'Has your alcohol consumption affected your mental or physical health negatively?',
+            question: 'How often do you feel you can be yourself in your relationships?',
           },
           {
-            question: 'How often have you experienced withdrawal symptoms (e.g., anxiety, irritability, nausea) when you have not been using drugs for some time?',
+            question: 'how satisfied are you with the overall quality of your relationships?',
           },
           {
-            question: 'Do you spend a significant amount of time obtaining, using, or recovering from drugs?',
+            question: 'How often do you engage in acts of kindness and support with the people in your life?',
           },
           {
-            question: 'Do you feel guilty or ashamed about your drug use?',
+            question: 'How well do you manage conflicts and disagreements in your relationships?',
           },
       ];
+    
+    
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
@@ -60,21 +59,17 @@ const Drugs = () => {
 
  
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    console.log(quizInfo);
-    try {
-      await axios.post('http://localhost:8000/answers', {
-        quizInfo: Object.fromEntries(quizInfo),
-      })
-      .then(res=>{
-        navigate("/drugSupp")
-      })
-      
-    } catch (e) {
-      console.log(e);
-    }
-  }
+//   async function handleSubmit(e) {
+//     e.preventDefault();
+//     console.log(quizInfo);
+//     try {
+//     //   await axios.post('http://localhost:8000/answers', {
+//     //     quizInfo: Object.fromEntries(quizInfo),
+//       });
+//     } catch (e) {
+//       console.log(e);
+//     }
+//   }
 
   const handleNextQuestion = () => {
     if (selectedAnswer) {
@@ -126,19 +121,20 @@ const Drugs = () => {
     );
   };
 
+  const showSiteBlocker = false;
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md mx-auto bg-white p-4 rounded shadow-lg">
-       
+        
         {currentQuestion < questions.length ? (
           renderQuestion()
         ) : (
           <>
-             <div className='text-xl font-bold mb-6'>
+            <div className='text-xl font-bold mb-6'>
             Your Quiz has been completed. Click on Submit button to see your score.
-        </div>
-          <Link to = "/drugSupp" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleSubmit}>
+             </div>
+            <Link to = "/support" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Submit
             </Link>
           </>
@@ -148,4 +144,4 @@ const Drugs = () => {
   );
 };
 
-export default Drugs;
+export default Relationship;

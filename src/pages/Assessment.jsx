@@ -5,16 +5,16 @@ import axios from "axios";
 import useSharedStore from './Store';
 
 function Assessment() {
-  const [addiction, setAddiction] = useState("/");
+  const [issue, setIssue] = useState("/");
   const navigate = useNavigate();
   const email = useSharedStore((state) => state.sharedData);
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const data = "/"+addiction;
+    const data = "/"+issue;
     try {
       await axios.post("http://localhost:8000/drugtype",{
-          email,addiction
+          email,issue
       })
       .then(res=>{
             navigate(data)
@@ -39,12 +39,12 @@ function Assessment() {
                   </div>
                   <div className="space-y-1">
                   
-                     <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white " value="drugs" onClick={(e) => { setAddiction( addiction => e.target.value)}}>Drugs</button>
+                     <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white " value="addiction" onClick={(e) => { setIssue( issue => e.target.value)}}>Addiction</button>
 
                     
-                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="devices" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Devices</button>
+                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="relationship" onClick={(e) => { setIssue(issue => e.target.value) }}>Relationship</button>
 
-                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="alcohol" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Alcohol</button>
+                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="academics" onClick={(e) => { setIssue(issue => e.target.value) }}>Academics</button>
                     
                     
                     <Link to = "/assessment"><button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white">Other</button></Link>

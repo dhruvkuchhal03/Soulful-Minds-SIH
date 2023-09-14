@@ -18,9 +18,9 @@ import {
 import Dashboard from './pages/Dashboard';
 import Loginc from './pages/Loginc';
 import Registerc from './pages/Registerc';
-import Drugs from './pages/Drugs';
-import Alcohol from './pages/Alcohol';
-import Devices from './pages/Devices';
+import Addiction from './pages/Addiction';
+import Academics from './pages/Academics';
+import Relationship from './pages/Relationship';
 import Other from './pages/Other';
 import Support from './pages/Support';
 import Support1 from './pages/Support1';
@@ -48,13 +48,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/adminlogin" element={<AdminLogin />} />
         <Route path="/blockweb" element={<Blockweb />} />
-        <Route path="/drugs" element={<Drugs />} />
-        <Route path="/alcohol" element={<Alcohol />} />
-        <Route path="/devices" element={<Devices />} />
+        <Route path="/addiction" element={<Addiction />} />
+        <Route path="/academics" element={<Academics />} />
+        <Route path="/relationship" element={<Relationship />} />
         <Route path="/other" element={<Other />} />
         <Route path="/support" element={<Support />} />
-        <Route path="/drugSupp" element={<Support1 />} />
-        <Route path="/alcoholSupp" element={<Support2 />} />
+        <Route path="/addictionSupp" element={<Support1 />} />
+        <Route path="/academicsSupp" element={<Support2 />} />
         <Route path="/registerc" element={<Registerc />} />
         <Route path="/loginc" element={<Loginc />} />
         <Route path="/consultant" element={<Consultant />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import pic from '../assets/client3.png'
 
-const UserCard = ({name, email, college, addiction, city }) => {
+const UserCard = ({name, email, college, issue, city }) => {
   
   return (
     <div className=" overflow-hidden ">
@@ -11,7 +11,7 @@ const UserCard = ({name, email, college, addiction, city }) => {
       <div className="px-2 py-2 grid grid-cols-4 gap-3w">
         <p className="text-gray-700 text-base"> Email: {email}</p>
         <p className="text-gray-700 text-base">College: {college}</p>
-        <p className="text-gray-700 text-base">Addiction: {addiction}</p>
+        <p className="text-gray-700 text-base">issue: {issue}</p>
         <p className="text-gray-700 text-base">City: {city}</p>
       </div>
     </div>

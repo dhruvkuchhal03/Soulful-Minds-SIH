@@ -12,7 +12,7 @@ const { AccessToken } = require('twilio').jwt;
 const VideoGrant = AccessToken.VideoGrant;
 const http = require('http').createServer(app);
 const mongoose = require('mongoose');
-const mongoString = 'mongodb://localhost:27017/refrain-addiction';
+const mongoString = 'mongodb://localhost:27017/soulful-minds';
 mongoose.connect(
   `mongodb+srv://soulful_minds:sih_soulful_minds@cluster0.rdbr1wc.mongodb.net/?retryWrites=true&w=majority`,
   {
@@ -215,7 +215,7 @@ app.post('/register', async (req, res) => {
     city: city,
     college: college,
     password: password,
-    addiction: '',
+    issue: '',
   };
 
   try {
@@ -399,11 +399,11 @@ app.get('/api/consultants/:consultantId', async (req, res) => {
   }
 });
 app.post('/drugtype', async (req, res) => {
-  const { email, addiction } = req.body;
+  const { email, issue } = req.body;
 
   const data = {
     email: email,
-    addiction: addiction,
+    issue: issue,
   };
 
   try {
@@ -413,7 +413,7 @@ app.post('/drugtype', async (req, res) => {
     }
     const result = await collection.updateOne(
       { _id: check._id },
-      { $set: { addiction } },
+      { $set: { issue } },
     );
     res.json({ message: 'Document updated successfully' });
   } catch (e) {
