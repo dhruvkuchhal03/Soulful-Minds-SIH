@@ -153,7 +153,7 @@ function VideoCall({ token, identity, roomName }) {
       if (room) {
         room.disconnect();
       }
-      TwilioVideo.disconnect();
+      // TwilioVideo.disconnect();
     };
   }, [token, identity, roomName]);
 

@@ -33,13 +33,6 @@ function Support() {
         1. If your level comes out to be in range of 8-10 you can refer the tertiary support by clicking on the below button Need Assistance? This will redirect you to a page where you can schedule an appointment with your councelor and get help by connecting with them on a video/telephonic meeting.
       </div>
       <div className="flex flex-wrap justify-center">
-         {showSiteBlocker && (
-          <Link to="/blockweb">
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded m-2 sm:m-4">
-            SiteBlocker
-          </button>
-          </Link>
-        )}
         <Link to="/chat">
           <button className="bg-yellow-400 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded m-2 sm:m-4">
             <FaComment className="inline-block mr-2" />

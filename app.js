@@ -433,9 +433,9 @@ io.on('connection', (socket) => {
 app.post('/token', (req, res) => {
   const identity = req.body.identity;
   const roomName = req.body.roomName;
-  const accountSid = 'AC38909233da0177158c0c27f70c6bfa99';
-  const apiKey = 'SK2dbbbcacc139c14c391842b44ad993e8';
-  const apiSecret = 'fgNWiIGLToDyL1dWmed5GdXAy8jpGcD4';
+  const accountSid = 'AC505d773425c4117e1d1bbba7bde3df67';
+  const apiKey = 'SKe28116763bd4d81e073ef2c688d936e5';
+  const apiSecret = 'yjlUfqjroRdaPft6nbwksZ66k49tUY0H';
   const token = new AccessToken(accountSid, apiKey, apiSecret, {
     identity: identity,
   });
