@@ -42,12 +42,12 @@ function Assessment() {
                      <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white " value="drugs" onClick={(e) => { setAddiction( addiction => e.target.value)}}>Drugs</button>
 
                     
-                    <button className="p-3 bg-white border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="devices" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Devices</button>
+                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="devices" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Devices</button>
 
-                    <button className="p-3 bg-white border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="alcohol" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Alcohol</button>
+                    <button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white mb-4 " value="alcohol" onClick={(e) => { setAddiction(addiction => e.target.value) }}>Alcohol</button>
                     
                     
-                    <Link to = "/assessment"><button className="p-3 bg-white border rounded-full w-full font-semibold hover:bg-black hover:text-white">Other</button></Link>
+                    <Link to = "/assessment"><button className="p-3 mb-4 border rounded-full w-full font-semibold hover:bg-black hover:text-white">Other</button></Link>
 
                   </div>
       
