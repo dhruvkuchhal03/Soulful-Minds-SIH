@@ -587,7 +587,7 @@ function Landing() {
                     </a>
                   </div>
                 </h2>
-                <p>A BREADS' PROGRAM</p>
+                <p>An Initiative</p>
                 <h4 className="sub-con-fo ad-info my-4">Catch on Social</h4>
                 <ul className="w3layouts_social_list list-unstyled">
                   <li>
