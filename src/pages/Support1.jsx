@@ -26,7 +26,7 @@ function Support1() {
       <div className='w-1/2 text-green-500 font-mono mt-3'>
         1. If your level comes out to be in range of 1-5 you can refer the secondary support by clicking on the below button Chat with Us. This will redirect you to a page where you can ask for help from a smart chatBot. 
       </div><div className='w-1/2 text-yellow-500 font-mono mt-3 mb-3'>
-        1. If your level comes out to be in range of 6-10 you can refer the tertiary support by clicking on the below button Need Assistance? This will redirect you to a page where you can schedule an appointment with your councelor and get help by connecting with them on a video/telephonic meeting.
+        2. If your level comes out to be in range of 6-10 you can refer the tertiary support by clicking on the below button Need Assistance? This will redirect you to a page where you can schedule an appointment with your councelor and get help by connecting with them on a video/telephonic meeting.
       </div>
       <div className="flex flex-wrap justify-center">
         <Link to="/chat">
