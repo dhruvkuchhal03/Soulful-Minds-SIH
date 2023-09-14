@@ -21,7 +21,7 @@ function Landing() {
                     >
                       <div className="flex">
                         <img src={sbIcon} width={45} alt="" />
-                        <a href="https://breadsbangalore.org/" className=" mt-2 mx-2 text-4xl font-bold">
+                        <a href="#" className=" mt-2 mx-2 text-4xl font-bold">
                           Soulful Minds
                         </a>
                       </div>
@@ -80,20 +80,20 @@ function Landing() {
                         </ul>
                       </li>
                       <li>
-                        <a href="https://breadsbangalore.org/">Contact Us</a>
+                        <a href="#">Contact Us</a>
                       </li>
                       <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="face-bk">
+                        <a href="#" className="face-bk">
                           <span className="fa fa-facebook" aria-hidden="true" />
                         </a>
                       </li>
                       <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="twitter">
+                        <a href="#" className="twitter">
                           <span className="fa fa-twitter" aria-hidden="true" />
                         </a>
                       </li>
                       <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="dribble">
+                        <a href="#" className="dribble">
                           <span className="fa fa-dribbble" />
                         </a>
                       </li>
@@ -379,21 +379,21 @@ function Landing() {
                 className="w3layouts-sm"
                 defaultChecked
               />
-              <label htmlFor="tab1">Drug </label>
+              <label htmlFor="tab1">Addiction </label>
               <input
                 id="tab2"
                 type="radio"
                 className="w3layouts-sm"
                 name="tabs"
               />
-              <label htmlFor="tab2">Gadget </label>
+              <label htmlFor="tab2">Relationships </label>
               <input
                 id="tab3"
                 type="radio"
                 className="w3layouts-sm"
                 name="tabs"
               />
-              <label htmlFor="tab3">Porn </label>
+              <label htmlFor="tab3">Academics </label>
 
               <section id="content1" className="inner-w3layouts-wrap ">
                 <div className="row part-grids text-center inner-sec-w3ls d-flex justify-content-center">
@@ -408,14 +408,9 @@ function Landing() {
                         />
                       </div>
                       <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Natural Drugs</h4>
+                        <h4 className="mb-4 editContent">Drugs</h4>
                         <p>
-                          Natural drugs are derived from substances found in
-                          nature, such as plants. These drugs have been used for
-                          centuries for various purposes, including medicinal,
-                          recreational, or spiritual use. Examples of natural
-                          drugs include marijuana, opium, psilocybin mushrooms,
-                          and cocaine derived from the coca plant.
+                        Addictive drugs are substances that can lead to physical and psychological dependence when used regularly. These drugs often have powerful effects on the brain's reward system, making them highly sought after and habit-forming. Examples of addictive drugs include nicotine found in tobacco products, opioids like heroin and prescription painkillers, stimulants such as amphetamines, and alcohol, which can lead to alcoholism and dependency when consumed excessively.
                         </p>
                       </div>
                     </div>
@@ -431,16 +426,9 @@ function Landing() {
                         />
                       </div>
                       <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Synthetic Drug</h4>
+                        <h4 className="mb-4 editContent">Porn </h4>
                         <p>
-                          Synthetic drugs are artificially created in
-                          laboratories and are designed to mimic the effects of
-                          natural substances or create entirely new effects.
-                          These drugs are often produced through chemical
-                          processes using various compounds. Synthetic drugs
-                          include substances like MDMA (ecstasy),
-                          methamphetamine, synthetic cannabinoids, and synthetic
-                          opioids.
+                        Porn addiction is a modern phenomenon characterized by excessive and compulsive consumption of explicit sexual content, primarily facilitated by the internet. This behavioral addiction can have detrimental effects on individuals' personal relationships, mental health, and overall well-being. Like natural drugs, it has become a prevalent issue in today's digital age, leading to concerns about its impact on society and the need for effective interventions to address this addiction.
                         </p>
                       </div>
                     </div>
@@ -460,13 +448,9 @@ function Landing() {
                         />
                       </div>
                       <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Social Media</h4>
+                        <h4 className="mb-4 editContent">Family Relations</h4>
                         <p>
-                          Social media addiction is a pervasive issue
-                          characterized by excessive use and dependency on
-                          social media platforms, often resulting in decreased
-                          productivity, isolation, and negative impacts on
-                          mental health.
+                        Family dynamics deeply affect student mental health. Supportive families promote well-being, while dysfunctional ones can lead to anxiety and depression. Seeking professional help, relying on loved ones, and developing coping skills are crucial for managing the impact of family relations on students' mental health.
                         </p>
                       </div>
                     </div>
@@ -483,15 +467,10 @@ function Landing() {
                       </div>
                       <div className="caption cardd-body p-md-4">
                         <h4 className="mb-4 editContent">
-                          Technology Dependency
+                          Love & Intimate Relations
                         </h4>
                         <p>
-                          Technology Dependency refers to the excessive reliance
-                          and attachment to electronic devices beyond social
-                          media platforms, such as smartphones, laptops,
-                          tablets, and gaming consoles. It involves compulsive
-                          use and difficulty in controlling the time spent on
-                          these devices.
+                        Love and intimate relationships significantly impact students' mental health. Positive relationships offer emotional support and happiness, while conflicts and breakups can lead to distress and anxiety. Seeking professional help and support from loved ones are crucial for managing these effects.
                         </p>
                       </div>
                     </div>
@@ -511,16 +490,9 @@ function Landing() {
                         />
                       </div>
                       <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Porn</h4>
+                        <h4 className="mb-4 editContent">Academic Pressure</h4>
                         <p>
-                          Porn addiction is a complex issue that affects
-                          individuals globally. It involves compulsive and
-                          excessive consumption of pornography, leading to
-                          negative consequences. It can impair relationships,
-                          mental health, and overall well-being. Seeking
-                          professional help, support from loved ones, and
-                          developing healthy coping mechanisms are essential for
-                          overcoming porn addiction.
+                        Academic pressure is a multifaceted issue impacting students worldwide. It encompasses the intense demands of education, potentially leading to adverse consequences. These pressures can detrimentally affect mental health, causing anxiety, depression, and overall well-being to suffer. Seeking professional assistance, relying on a support system of loved ones, and cultivating effective coping strategies are pivotal in mitigating the adverse effects of academic stress on mental health.
                         </p>
                       </div>
                     </div>
@@ -684,7 +656,7 @@ function Landing() {
                         <a href="services.html">Services</a>
                       </li>
                       <li className="mt-3">
-                        <Link to="https://breadsbangalore.org/">Contact Us</Link>
+                        <Link to="#">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
