@@ -246,7 +246,7 @@ function Landing() {
                   <p>
                     {' '}
                     MI is a counseling technique that helps individuals find
-                    motivation to change their addictive behaviors. It involves
+                    motivation to change their behaviors. It involves
                     open-ended questions, active listening, and empathy to
                     enhance an individual's motivation and commitment to
                     recovery.
@@ -260,7 +260,7 @@ function Landing() {
                   <p>
                     Many treatment centers now offer online appointment booking
                     systems, allowing individuals to conveniently schedule a
-                    visit for drug addiction treatment.
+                    visit for treatment.
                   </p>
                 </div>
               </div>
