@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoString = "mongodb://localhost:27017/refrain-addiction";
+const mongoString = "mongodb://localhost:27017/soulful-minds";
 mongoose.connect(
   `mongodb+srv://soulful_minds:sih_soulful_minds@cluster0.rdbr1wc.mongodb.net/?retryWrites=true&w=majority`,
   {
@@ -34,7 +34,7 @@ const newSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  addiction: {
+  issue: {
     type: String,
     required: false,
   },

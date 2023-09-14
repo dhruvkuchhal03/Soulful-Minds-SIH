@@ -89,7 +89,7 @@ function Register() {
                     onChange={(e) => {
                       setSpeciality(e.target.value);
                     }}
-                    placeholder="Drug/Device/Alcohol"
+                    placeholder="Addiction/Relationship/Academics"
                   />
                 </div>
 

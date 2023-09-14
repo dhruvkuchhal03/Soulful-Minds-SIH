@@ -1,51 +1,52 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {useNavigate, Link } from 'react-router-dom';
 
-const Devices = () => {
+
+const Addiction = () => {
+    const navigate=useNavigate();
+
     const questions = [
         {
-          question: 'How often do you feel the need or urge to use device/internet?',
+          question: 'Have you ever felt a strong craving or urge to use a substance (e.g., alcohol, drugs) to cope with stress or emotions?',
         },
         {
-            question: 'Have you ever tried to cut down or control your device/internet usage?',
+          question: 'Have you ever used a substance in larger amounts or for longer periods than you initially intended?',
+        },
+        {
+          question: 'Have you ever experienced withdrawal symptoms (e.g., irritability, anxiety) when trying to stop or reduce substance use?',
+        },
+        {
+            question: 'Do you find it difficult to control your consumption of caffeine (e.g., coffee, energy drinks)?',
           },
           {
-            question: 'Do you find it difficult to go for a significant period without using device/internet?',
+            question: 'Have you ever felt the need to engage in excessive gaming or gambling to feel satisfied?',
           },
           {
-            question: 'How much hours do you spend on daily basis on device/internet?',
+            question: 'Do you find it hard to cut down on your consumption of sugary or high-calorie foods?',
           },
           {
-            question: 'Has your device/internet usage ever caused problems in your personal relationships or friendships?',
+            question: 'Have you experienced financial difficulties as a result of spending money on your addiction?',
           },
           {
-            question: 'Have you ever faced any academic difficulties (e.g., failing in exams, missing an important deadline) due to usage of device/internet?',
+            question: 'Have you ever neglected important responsibilities or relationships because of your addiction or substance use?',
           },
           {
-            question: 'Do you experience restlessness or irritability when you can not use your devices?',
+            question: 'Have you tried to quit or cut down your addiction?',
           },
           {
-            question: 'Do you feel preoccupied with thoughts about using your device/internet even when you are not using it?',
-          },
-           {
-            question: 'Have you tried to hide or minimize your device/internet usage from others?',
+            question: 'Do you find that you need to use increasing amounts of a substance to achieve the desired satisfaction?',
           },
           {
-            question: 'Do you feel guilty or ashamed about your excessive device or internet usage?',
+            question: 'Do you continue to use substances or engage in addictive behaviors despite knowing they have negative consequences on your health or well-being?',
           },
           {
-            question: 'Have u experienced a decrease in quality of your sleep cycle as a result of late-night device/internet usage?',
+            question: 'Do you spend a significant amount of time obtaining, using, or recovering from your addiction?',
           },
           {
-            question: 'How often do you experience headaches or eye-strain due to excessive use of device/internet?',
-          },
-          {
-            question: 'How often do you use device/internet for your productivity?',
+            question: 'Do you feel guilty or ashamed about your addiction?',
           },
       ];
-    
-    
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
@@ -59,17 +60,21 @@ const Devices = () => {
 
  
 
-//   async function handleSubmit(e) {
-//     e.preventDefault();
-//     console.log(quizInfo);
-//     try {
-//     //   await axios.post('http://localhost:8000/answers', {
-//     //     quizInfo: Object.fromEntries(quizInfo),
-//       });
-//     } catch (e) {
-//       console.log(e);
-//     }
-//   }
+  async function handleSubmit(e) {
+    e.preventDefault();
+    console.log(quizInfo);
+    try {
+      await axios.post('http://localhost:8000/answers', {
+        quizInfo: Object.fromEntries(quizInfo),
+      })
+      .then(res=>{
+        navigate("/addictionSupp")
+      })
+      
+    } catch (e) {
+      console.log(e);
+    }
+  }
 
   const handleNextQuestion = () => {
     if (selectedAnswer) {
@@ -121,20 +126,19 @@ const Devices = () => {
     );
   };
 
-  const showSiteBlocker = false;
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md mx-auto bg-white p-4 rounded shadow-lg">
-        
+       
         {currentQuestion < questions.length ? (
           renderQuestion()
         ) : (
           <>
-            <div className='text-xl font-bold mb-6'>
+             <div className='text-xl font-bold mb-6'>
             Your Quiz has been completed. Click on Submit button to see your score.
-             </div>
-            <Link to = "/support" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        </div>
+          <Link to = "/addictionSupp" className="w-full bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleSubmit}>
               Submit
             </Link>
           </>
@@ -144,4 +148,4 @@ const Devices = () => {
   );
 };
 
-export default Devices;
+export default Addiction;

@@ -44,7 +44,7 @@ useEffect(() => {
                     name={user.name}
                     email={user.email}
                     college={user.college}
-                    addiction={user.addiction}
+                    issue={user.issue}
                     city={user.city}
                   />
                 </button>
