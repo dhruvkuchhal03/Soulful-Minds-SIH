@@ -22,7 +22,7 @@ function Landing() {
                       <div className="flex">
                         <img src={sbIcon} width={45} alt="" />
                         <a href="https://breadsbangalore.org/" className=" mt-2 mx-2 text-4xl font-bold">
-                          Refrain Addiction
+                          Soulful Minds
                         </a>
                       </div>
                     </a>
@@ -341,7 +341,7 @@ function Landing() {
                 <span className="fa fa-users" />
                 <div className="counter-info">
                   <h4>7200+</h4>
-                  <p>Healthy and happy customers treated by BREADS</p>
+                  <p>Healthy and happy customers</p>
                 </div>
               </div>
               <div className="col-lg-4 counter two editContent mt-3">
@@ -349,7 +349,7 @@ function Landing() {
                 <div className="counter-info">
                   <h4>150+</h4>
                   <p>
-                    Professional medical specialist for counseling at BREADS
+                    Professional medical specialist
                   </p>
                 </div>
               </div>
@@ -358,8 +358,7 @@ function Landing() {
                 <div className="counter-info">
                   <h4>15+</h4>
                   <p>
-                    Years of impeccable and successful work by our organization
-                    BREADS
+                    Years of impeccable and successful work
                   </p>
                 </div>
               </div>
@@ -584,16 +583,16 @@ function Landing() {
 
                 <div className='flex'>
                   <div className="testi_grid mr-4">
-                  <img src={client1} alt=" " className="img-fluid h-40 w-40 mx-2" />
+                  <img src={client1} alt=" " className="img-fluid h-40 w-40 mx-8" />
                   <h5>Thomas Carl</h5>
                   <label>I used this website to overcome my addiction of consuming alcohol. </label>
                 </div>
                 <div className="testi_grid mr-4 ">
-                  <img src={client2} alt=" " className="img-fluid h-40 w-40 ml-3" />
+                  <img src={client2} alt=" " className="img-fluid h-40 w-40 ml-12" />
                   <h5>Lana Del Ray</h5>
                   <label>This website boosted my confidence and motivated me to overcome my addiction.</label>
                 </div><div className="testi_grid gap-8">
-                  <img src={client3} alt=" " className="img-fluid h-40 w-40" />
+                  <img src={client3} alt=" " className="img-fluid h-40 w-40 ml-4" />
                   <h5>Ana De armas</h5>
                   <label>I used this website to overcome my addiction of consuming alcohol. </label>
                 </div>
