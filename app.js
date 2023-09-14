@@ -14,7 +14,7 @@ const http = require('http').createServer(app);
 const mongoose = require('mongoose');
 const mongoString = 'mongodb://localhost:27017/refrain-addiction';
 mongoose.connect(
-  `mongodb+srv://refrain-addiction:codetogivehack@cluster0.yzcnusv.mongodb.net/?retryWrites=true&w=majority`,
+  `mongodb+srv://soulful_minds:sih_soulful_minds@cluster0.rdbr1wc.mongodb.net/?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
